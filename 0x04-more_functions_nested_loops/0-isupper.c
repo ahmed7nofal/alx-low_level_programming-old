@@ -1,17 +1,21 @@
-#include "main.h"
+/*
+ * File: 0-isupper.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
+
+/**
+ * _isupper - Checks for uppercase characters.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if character is uppercase, 0 otherwise.
+ */
 int _isupper(int c)
 {
-	char uppercase = 'A';
-	int isupper = 0;
+	if (c >= 'A' && c <= 'Z')
+		return (1);
 
-	for (; uppercase <= 'Z'; uppercase++)
-	{
-		if (c == uppercase)
-		{
-			isupper = 1;
-			break;
-		}
-	}
-
-	return (0);
+	else
+		return (0);
 }
