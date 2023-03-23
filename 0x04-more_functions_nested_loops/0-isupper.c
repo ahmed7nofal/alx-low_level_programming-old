@@ -13,7 +13,7 @@
  *
  * Return: 1 if character is uppercase, 0 otherwise.
  */
-int _isupper(int c)
+int _isupper(char c)
 {
 
 	if (c >= 97 && c <= 122)
