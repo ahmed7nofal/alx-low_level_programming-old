@@ -13,11 +13,20 @@
  *
  * Return: 1 if character is uppercase, 0 otherwise.
  */
-int _isupper(char c)
+int _isupper(char ch)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
+    if(ch >= 'A' && ch <= 'Z')
+    {
+        return (1);
+    }
+    else if(ch >= 'a' && ch <= 'z')
+    { 
+	    return (0);
+    }
+    else
+    {
+         return (0);
+    }
 
-	else
-		return (0);
+   
 }
